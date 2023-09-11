@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .use,
+      .ps {
+        width: 500px;
+      }
+      .btnlog {
+        width: 500px;
+        height: 30px;
+      }
+      .divi {
+        margin: auto;
+        padding: 0;
+        background-color: #c6c6c6a2;
+        height: 70px;
+        width: 500px;
+      }
+      img {
+        text-align: center;
+      }
+      .btn {
+        float: left;
+      }
+      .psw {
+        float: right;
+      }
+      span {
+        float: left;
+      }
+      .main {
+        margin: auto;
+        padding: 0;
+        height: 70px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div style="text-align: center">
+        <img src="images.png" alt="user login" /> <br /><br />
+      </div>
+
+      <form action="">
+        <label for="user" style="text-align: left"><b>Username</b></label>
+        <br />
+        <input
+          type="text"
+          name="user"
+          class="use"
+          placeholder="Enter Username"
+        />
+        <br /><br />
+        <label for="pass" style="text-align: left"><b>Password</b></label>
+        <br />
+        <input
+          type="text"
+          name="pass"
+          id=""
+          class="ps"
+          placeholder="Enter Password"
+        /><br /><br />
+
+        <button class="btnlog btn-success">Login</button>
+        <br /><br />
+        <span
+          ><input type="checkbox" name="" id="rem" /> Remember me <br /><br
+        /></span>
+        <br /><br />
+        <div class="divi">
+          <br />
+          <button class="btn btn-danger">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

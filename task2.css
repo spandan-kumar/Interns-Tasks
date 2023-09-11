@@ -1,0 +1,60 @@
+table {
+  border-radius: 10px;
+  overflow: hidden;
+  /* //Clip any overflowing content within the rounded table  */
+  border: 1px solid black;
+}
+td,
+th {
+  padding: 45px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+th {
+  text-align: center;
+}
+td {
+  text-align: left;
+}
+
+#one {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 8px;
+}
+#four {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  padding: 10px;
+  border-radius: 100px;
+}
+#three {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  border-radius: 20px;
+  padding: 20px;
+}
+#five {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  padding: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#two {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  padding: 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px; /* Add space between all columns */
+  padding: 10px;
+}

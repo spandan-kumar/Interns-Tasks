@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      ul {
+        position: sticky;
+        list-style-type: none;
+        margin: 0; /* Remove the default margin */
+        padding: 0;
+        width: 200px;
+        background-color: white;
+        left: 0; /* Set left position to 0 */
+      }
+
+      li {
+        position: relative; /* Make li elements relative for absolute positioning */
+      }
+
+      li a {
+        display: block;
+        color: blue;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #c6c6c6;
+        color: rgb(147, 2, 65);
+        text-decoration: none;
+      }
+
+      /* Add the black div to the right of each link */
+      .black-div {
+        position: absolute;
+        top: 0;
+        right: -20px; /* Adjust the width of the black div as needed */
+        width: 20px; /* Width of the black div */
+        height: 100%;
+        background-color: black;
+      }
+      div {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 20px;
+        padding: 0px;
+      }
+      body {
+        background-color: rgb(
+          193,
+          255,
+          47
+        ); /* Set your desired background color */
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+      }
+      h1,
+      p {
+        color: rgb(147, 2, 65);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <ul>
+            <li>
+              <a href="task4_c.html">Home page</a>
+              <div class="black-div"></div>
+              <!-- Black div to the right -->
+            </li>
+          </ul>
+          <br />
+          <ul>
+            <li>
+              <a href="task2_c.html">Musings</a>
+              <div class="black-div"></div>
+              <!-- Black div to the right -->
+            </li>
+          </ul>
+          <br />
+          <ul>
+            <li>
+              <a href="task3_c.html">My town</a>
+              <div class="black-div"></div>
+              <!-- Black div to the right -->
+            </li>
+          </ul>
+          <br />
+          <ul>
+            <li>
+              <a href="index.html">Links</a>
+              <div class="black-div"></div>
+              <!-- Black div to the right -->
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9 hello">
+          <h1>My First Styled Page</h1>
+          <br />
+          <p>
+            Welcome to my styled page!
+            <br /><br />
+            It lacks images, but at least it has style. And it has links, even
+            if they don't go anywhere...
+            <br /><br />
+            There should be more here, but I don't know what yet.
+          </p>
+          <hr />
+          <p>
+            <i>
+              Made 5 April 2004
+              <br />
+              by myself.</i
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

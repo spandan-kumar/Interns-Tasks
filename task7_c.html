@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(151, 32, 85);
+      }
+
+      .try-container {
+        flex: 1; /* Expand to fill available space */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-top: 45px;
+        margin-bottom: 50px;
+        background-color: rgb(114, 22, 64);
+        position: relative; /* Set the position to relative */
+        z-index: 1; /* Ensure it's above the flex-container */
+      }
+
+      .form-container {
+        position: absolute; /* Set the position to absolute */
+        background-color: rgb(114, 22, 64);
+        border-radius: 5px;
+        color: aliceblue;
+        z-index: 2; /* Place the form above the try-container */
+      }
+      table {
+        height: 500px;
+        width: 100vh;
+        align-items: center;
+        padding-right: 20px;
+      }
+      button {
+        align-items: center;
+        width: 100%;
+        height: 30px;
+      }
+      label {
+        width: 100%;
+      }
+      input {
+        size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="try-container">
+        <!-- Form is placed within a separate container -->
+        <div class="form-container">
+          <form action="">
+            <table>
+              <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" size="100%" name="name"/></td>
+              </tr>
+              <tr>
+                <td><label for="user">Email</label></td>
+                <td><input type="email" size="100%" name="user"/></td>
+              </tr>
+              <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" size="100%" name="pass" /></td>
+              </tr>
+              <tr>
+                <td><label for="phn">Phone Number</label></td>
+                <td><input type="text" size="100%" name="phn" /></td>
+              </tr>
+              <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" />male
+                    <input type="radio" name="gender" />female</td>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="Lang">Language</label></td>
+                <td>
+                  <select name="" id="">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="others" selected>Select Language</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="zip">Zipcode</label></td>
+                <td><input type="text" size="100%" name="zip"></td>
+              </tr>
+              
+              <tr>
+                <td><label for="add">Address</label></td>
+                <td><textarea name="" id="" cols="82" rows="5" name="add"></textarea></td>
+              </tr>
+             
+            </table>
+            <br /><br />
+            <button>Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
